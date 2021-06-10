@@ -1,0 +1,68 @@
+package Entity;
+
+import dao.AssosiationDao;
+
+
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+    	
+     /*   UserRegistration registration = new UserRegistration();
+      //  registration.setId(125L);
+        registration.setUserName("amith");
+        registration.setPassword("passwroed");
+        registration.setEmail("amith@gmail.com");
+        registration.setMobileNumber("134567");
+        */
+      /*  Entity.RegisterHqlDao registerDao = new Entity.RegisterHqlDao();
+        //registerDao.saveUser(registration);
+       
+       // UserRegistration userRegistration = registerDao.getUserById(124L);
+        //System.out.println(userRegistration);
+        /*
+        		UserDto userDto = new UserDto();
+        		userDto.setUserName("ravi t");
+        		userDto.setPassword("pwd@123");
+        		userDto.setMobileNumber("1234567890");
+        		userDto.setEmail("rt@outlook.com");
+        		
+        		registerDao.updateUserDetailsById(124L, userDto);
+        		 */
+        
+       /* RegisterHqlDao hqlDao = new RegisterHqlDao();
+        /*
+        List<UserRegistration> list = hqlDao.getUsers();
+        list.forEach( user ->{
+        		System.out.println(user);
+        });
+        */
+        /*
+        UserRegistration userRegistration = hqlDao.getUserByEmail("rt@outlook.com");
+        System.out.println(userRegistration);
+        */
+       // hqlDao.updateMobileNumberById("8951606106", 124L);
+       // hqlDao.deleteUserById(125L);
+        
+        
+        Captain captain = new Captain();
+        captain.setName("ronaldo");
+        captain.setAge(35L);
+        captain.setJersyNumber("7");
+        captain.setNoMatchesPlayed(200L);
+        
+        Team team = new Team();
+        team.setName("portugal football team");
+        team.setType("footbal");
+        team.setCountry("portugal");
+        team.setNoOfPlayers(11L);
+        team.setCaptain(captain);
+        
+        AssosiationDao dao = new AssosiationDao();
+        dao.saveTeamDetails(team);
+    }
+
+
+	}
